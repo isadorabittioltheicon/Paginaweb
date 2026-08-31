@@ -3,58 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mundo da Mitologia Grega ⚡</title>
-  
+  <title>Mitologia Grega ⚡</title>
+  <!-- CSS Diferente: estilização temática com roxo, amarelo e creme -->
   <style>
-    /* Estilo Geral da Página */
     body {
-      background-color: #FFFDD0; /* Cor Creme de fundo */
-      color: #333333;
+      background-color: #FFFDD0; /* Cor creme de fundo */
       font-family: 'Georgia', serif;
       margin: 0;
       padding: 20px;
     }
 
-    /* Estilo do Cabeçalho */
     header {
-      background-color: #4A154B; /* Roxo principal */
-      color: #FFD700; /* Amarelo nos destaques */
+      background-color: #4A154B; /* Roxo */
+      color: #FFD700; /* Amarelo */
       text-align: center;
       max-width: 800px;
-      margin: 0 auto 20px auto;
-      padding: 24px;
-      border-radius: 12px;
-      border: 3px solid #FFD700;
+      margin: 0 auto;
+      padding: 16px;
+      border-radius: 8px 8px 0 0;
     }
 
-    /* Seção Principal */
     main {
       background-color: #FFFFFF;
+      color: #333333;
       max-width: 800px;
       margin: 0 auto;
-      padding: 24px;
-      border-radius: 12px;
-      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+      padding: 16px;
+      border-radius: 0 0 8px 8px;
     }
 
-    /* Estruturação dos Artigos (com a classe personalizada 'card-mitologia') */
-    .card-mitologia {
+    article {
       display: flex;
       gap: 16px;
-      background-color: #FFFDD0; /* Creme */
-      padding: 16px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      border-left: 6px solid #4A154B; /* Detalhe Roxo */
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 2px dashed #4A154B;
     }
 
-    /* Estilização das Imagens */
     img {
       width: 100px;
       height: 100px;
       object-fit: cover;
-      border-radius: 8px;
       border: 2px solid #FFD700;
+      border-radius: 6px;
     }
 
     .artigo-autor {
@@ -62,55 +53,98 @@
       color: #4A154B;
     }
 
-    /* Estilo do Botão de Curtir */
     button {
       background-color: #4A154B;
       color: #FFD700;
-      border: none;
-      padding: 8px 16px;
-      border-radius: 20px;
+      border: 1px solid #FFD700;
+      padding: 6px 12px;
+      border-radius: 4px;
       cursor: pointer;
-      font-weight: bold;
-      margin-top: 10px;
     }
 
-    button:hover {
-      background-color: #FFD700;
-      color: #4A154B;
-    }
-
-    /* Responsividade do Vídeo */
+    /* Classe para ajustar o tamanho do vídeo */
     .video-container {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
       margin-top: 15px;
-      border-radius: 8px;
     }
 
     .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
       width: 100%;
-      height: 100%;
+      height: 315px;
       border: 0;
+      border-radius: 8px;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>🏛️ Mitologia Grega: Deuses e Lendas ⚡</h1>
-    <p>Explorando os fascinantes mitos da Grécia Antiga</p>
+    <h1>🏛️ Mitologia Grega: Deuses e Mitos ⚡</h1>
+    <p>Explorando as lendas e mistérios do Monte Olimpo</p>
   </header>
 
   <main>
-    <section>
-      
-      <article class="card-mitologia">
-        <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?w=300" alt="Estátua Grega de Zeus">
-        <div>
-          <h2>O Olimpo e os Grandes Deuses ⚡</h2>
-          <p class="artigo-autor">Por: Isadora Bittiol</p>
+    <article>
+      <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?w=300" alt="Estátua de deus grego">
+      <!-- Primeira DIV -->
+      <div>
+        <h2>Os Deuses do Olimpo ⚡</h2>
+        <p class="artigo-autor">Por: Isabela Matos</p>
+        
+        <!-- Parágrafo 1 -->
+        <p>A mitologia grega é o conjunto de mitos e lendas criados pelos antigos gregos para explicar a origem do universo, os fenômenos da natureza e o comportamento humano. No centro dessas histórias estavam os doze deuses olímpicos, que viviam no topo do Monte Olimpo e governavam o destino dos mortais.</p>
+        
+        <!-- Parágrafo 2 -->
+        <p>O mais poderoso entre eles era Zeus, o rei dos deuses e senhor do trovão ⚡, acompanhado por seus irmãos Poseidon, o regente dos mares 🔱, e Hades, o guardião do submundo 🗝️. Juntos, esses deuses fascinantes moldavam os acontecimentos do mundo antigo.</p>
+        
+        <button>❤️ <span>0</span></button>
+        <button>👍 <span>0</span></button>
+      </div>
+    </article>
+
+    <article>
+      <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?w=300" alt="Templo da Grécia antiga">
+      <!-- Segunda DIV -->
+      <div>
+        <h2>Heróis e Lendas Incríveis 🏺</h2>
+        <p class="artigo-autor">Por: Isabela Matos</p>
+        
+        <!-- Parágrafo 3 -->
+        <p>Além dos deuses, as lendas gregas destacavam heróis conhecidos por sua bravura e força extraordinárias, como Hércules e Perseu. Esses semideuses enfrentavam tarefas perigosas e monstros lendários, como a Medusa e o Minotauro, para provar seu valor perante os deuses.</p>
+        
+        <!-- Parágrafo 4 -->
+        <p>As histórias da mitologia grega continuam vivas na nossa cultura até hoje, inspirando livros, filmes e estudos sobre a humanidade. Para saber mais sobre esse universo incrível, assista ao vídeo que separei logo abaixo!</p>
+        
+        <!-- Vídeo incorporado -->
+        <div class="video-container">
+          <iframe src="https://www.youtube.com/embed/jM6sT6iL9S4" title="Vídeo de Mitologia Grega" allowfullscreen></iframe>
+        </div>
+
+        <br>
+        <button>❤️ <span>0</span></button>
+        <button>👍 <span>0</span></button>
+      </div>
+    </article>
+  </main>
+
+  <script>
+    const botoes = document.querySelectorAll("button");
+
+    botoes.forEach(function (botao) {
+      let curtiu = false;
+
+      botao.addEventListener("click", botaoClicado);
+
+      function botaoClicado() {
+        console.log("fui clicado");
+        let texto = botao.querySelector("span");
+        if (curtiu === false) {
+          texto.textContent++;
+          curtiu = true;
+        } else {
+          texto.textContent--;
+          curtiu = false; 
+        }
+      }
+    });
+  </script>
+</body>
+</html>
