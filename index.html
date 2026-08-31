@@ -3,89 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu blog de Mitologia Grega</title>
+  <title>Mundo da Mitologia Grega ⚡</title>
+  
   <style>
+    /* Estilo Geral da Página */
+    body {
+      background-color: #FFFDD0; /* Cor Creme de fundo */
+      color: #333333;
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* Estilo do Cabeçalho */
     header {
-      background-color: #2C1B47;
-      color: #F4D58D;
+      background-color: #4A154B; /* Roxo principal */
+      color: #FFD700; /* Amarelo nos destaques */
       text-align: center;
       max-width: 800px;
-      margin: 0 auto;
-      padding: 16px;
+      margin: 0 auto 20px auto;
+      padding: 24px;
+      border-radius: 12px;
+      border: 3px solid #FFD700;
     }
 
+    /* Seção Principal */
     main {
-      background-color: #FFF8E7;
-      color: #2C1B47;
+      background-color: #FFFFFF;
       max-width: 800px;
       margin: 0 auto;
-      padding: 16px;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
     }
 
-    article {
+    /* Estruturação dos Artigos (com a classe personalizada 'card-mitologia') */
+    .card-mitologia {
       display: flex;
+      gap: 16px;
+      background-color: #FFFDD0; /* Creme */
+      padding: 16px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border-left: 6px solid #4A154B; /* Detalhe Roxo */
     }
 
+    /* Estilização das Imagens */
     img {
-      width: 80px;
-      height: 80px;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 2px solid #FFD700;
     }
 
     .artigo-autor {
       font-weight: bold;
+      color: #4A154B;
+    }
+
+    /* Estilo do Botão de Curtir */
+    button {
+      background-color: #4A154B;
+      color: #FFD700;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #FFD700;
+      color: #4A154B;
+    }
+
+    /* Responsividade do Vídeo */
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      margin-top: 15px;
+      border-radius: 8px;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Meu blog de Mitologia Grega</h1>
-    <p>Vou compartilhar conhecimentos e curiosidades sobre a mitologia grega</p>
+    <h1>🏛️ Mitologia Grega: Deuses e Lendas ⚡</h1>
+    <p>Explorando os fascinantes mitos da Grécia Antiga</p>
   </header>
 
   <main>
-    <article>
-      <img src="imagem-blog.png" alt="Ilustração conceitual da mitologia grega, com elementos relacionados aos deuses do Olimpo, como uma coluna grega, uma coroa de louros e detalhes dourados.">
-      <div>
-        <h2>Meu primeiro post</h2>
-        <p class="artigo-autor">Por: Isadora Bittiol</p>
-        <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar histórias, curiosidades e informações sobre os deuses, heróis e criaturas da mitologia grega.</p>
-        <button>❤️<span>0</span></button>
-        <button>👍<span>0</span></button>
-      </div>
-    </article>
-
-    <article>
-      <img src="imagem-blog.png" alt="Ilustração conceitual da mitologia grega, com elementos relacionados aos deuses do Olimpo, como uma coluna grega, uma coroa de louros e detalhes dourados.">
-      <div>
-        <h2>Meu segundo post</h2>
-        <p class="artigo-autor">Por: Isadora Bittiol</p>
-        <p>Neste post vamos conhecer um pouco mais sobre os deuses do Olimpo e entender suas histórias, poderes e relações dentro da mitologia grega.</p>
-        <button>❤️<span>0</span></button>
-        <button>👍<span>0</span></button>
-      </div>
-    </article>
-  </main>
-
-  <script>
-    const botoes = document.querySelectorAll("button");
-
-    botoes.forEach(function (botao) {
-      let curtiu = false;
-
-      botao.addEventListener("click", botaoClicado);
-
-      function botaoClicado() {
-        console.log("fui clicado");
-        let texto = botao.querySelector("span");
-        if (curtiu === false) {
-          texto.textContent++;
-          curtiu = true;
-        } else {
-          texto.textContent--;
-          curtiu = false; 
-        }
-      }
-    });
-  </script>
-</body>
-</html>
+    <section>
+      
+      <article class="card-mitologia">
+        <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?w=300" alt="Estátua Grega de Zeus">
+        <div>
+          <h2>O Olimpo e os Grandes Deuses ⚡</h2>
+          <p class="artigo-autor">Por: Isadora Bittiol</p>
